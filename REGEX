@@ -27,3 +27,12 @@ REGEX MOST USED SENTENCES
 /^select([\n \t]+)\*([\n \t]+)from([\n \t]+)[a-zA-Z0-9]+([\n \t]+)where([\n \t]+)[a-zA-Z0-9]+([\n \t]+)=([\n \t]+)\d+;$/.test('select * from table  where  id = 2;') true
 
 ([\n \t]+)? permite uno o mas espacios en blanco, saltos de linea o tabulaciones.
+
+*Javascript
+const regex = /^select([\n \t]+)\*([\n \t]+)from([\n \t]+)([a-zA-Z0-9]+)([\n \t]+)where([\n \t]+)([a-zA-Z0-9]+)([\n \t]+)=([\n \t]+)(\d+);$/i;
+const input = 'select * from holamundo where  id = 2;';
+const match = regex.exec(input);
+if (match) {
+  const tableName = match[4];
+  console.log(tableName);  //holamundo
+} else console.error('Sql Error');
