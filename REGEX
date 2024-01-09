@@ -30,7 +30,7 @@ REGEX MOST USED SENTENCES
 
 *Javascript
 const regex = /^select([\n \t]+)\*([\n \t]+)from([\n \t]+)([a-zA-Z0-9]+)([\n \t]+)where([\n \t]+)([a-zA-Z0-9]+)([\n \t]+)=([\n \t]+)(\d+);$/i;
-const input = 'select * from holamundo where  id = 2;';
+const input = `select * from holamundo where  id = 2;`;
 const match = regex.exec(input);
 if (match) {
   const tableName = match[4];
