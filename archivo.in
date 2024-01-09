@@ -1,0 +1,38 @@
+using System;
+
+namespace holaMundo{
+	class hola{
+		public static void Main(string [] tipo){
+			Console.WriteLine("hola mundo "+" soy jorge "+Convert.ToString(15));
+			int numero;
+			int numero2=2;
+			numero=15;
+			int n1=7;
+			int n2=8;
+			int n3=9;
+			int n4=10;
+			int n5=7;
+
+			int promedio=(n1+n2+n3+n4+n5)/5;
+			Console.WriteLine("la nota es: "+ Convert.ToString(promedio));
+			promedio+=10;
+			Console.WriteLine(promedio);
+			promedio-=1;
+			Console.WriteLine(promedio);
+			promedio*=10;
+			Console.WriteLine(promedio);
+			promedio/=int.Parse("15");
+			Console.WriteLine(promedio);
+			
+			string nombre="jorge";
+			nombre+=" alberto"+ " perez "+ " nolasco "+promedio.ToString();			
+			nombre="asdd";			
+
+			Console.WriteLine("el resultado es: ");			
+			bool bandera=false;			
+			bandera = (nombre.Equals("asdd") && (promedio>500)) || (4==4);
+			Console.WriteLine((nombre.Equals("asdd") && (promedio>500)) && (4==4));			
+
+		}
+	}
+}
