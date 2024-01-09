@@ -1,0 +1,29 @@
+REGEX MOST USED SENTENCES
+
+/^[0-9]+$/.test('3234234');    true
+
+/^[0-9-]+$/.test('32-34-234');   true
+
+/^(?=.*@*\.*\,)[0-9a-zA-Z.,@-]{5,10}$/.test('5a.@a,sa');  true
+
+/^(?=.*@)[0-9a-zA-Z-@]{3,7}$/.test('Aas@a-s');	true
+
+/^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9]{6,10}$/.test('aa2dAfs');  true
+
+/^alberto$/.test('alberto');     true
+
+/^[0-9]{8}-[0-9]{1}$/.test('00332093-1');    true
+
+/^[0-9]{4}-[0-9]{6}-[0-9]{3}-[0-9]{1}$/.test('0308-170293-102-0');  true
+
+/^(?=.*[a-z])[a-zA-Z0-9_.]+@[a-z]+.[a-z]+$/.test('jorge.nolasco@outlook.com')   true
+
+/^(\+?\d{2,3} ?)?[0-9]{4}-?[0-9]{4}$/.test('+503 4585-5487');  true
+
+/^[i|I][n|N][t|T] +[a-zA-z-0-9]+;$/.test('Int s2aasdfsfd;') true
+
+/^[i|I][n|N][t|T]([\n \t]+)?[a-zA-Z0-9]+;$/.test('InT s2aasdfsfd;') true
+
+/^select([\n \t]+)\*([\n \t]+)from([\n \t]+)[a-zA-Z0-9]+([\n \t]+)where([\n \t]+)[a-zA-Z0-9]+([\n \t]+)=([\n \t]+)\d+;$/.test('select * from table  where  id = 2;') true
+
+([\n \t]+)? permite uno o mas espacios en blanco, saltos de linea o tabulaciones.
