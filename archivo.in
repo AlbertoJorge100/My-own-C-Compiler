@@ -3,7 +3,7 @@ using System;
 namespace holaMundo{
 	class hola{
 		public static void Main(string [] tipo){
-			Console.WriteLine("hola mundo "+" soy jorge "+Convert.ToString(15));
+			Console.WriteLine("hello world "+" john doe "+Convert.ToString(15));
 			int numero;
 			int numero2=2;
 			numero=15;
@@ -25,7 +25,7 @@ namespace holaMundo{
 			Console.WriteLine(promedio);
 			
 			string nombre="jorge";
-			nombre+=" alberto"+ " perez "+ " nolasco "+promedio.ToString();			
+			nombre+="john"+ " doe "+promedio.ToString();			
 			nombre="asdd";			
 
 			Console.WriteLine("el resultado es: ");			
