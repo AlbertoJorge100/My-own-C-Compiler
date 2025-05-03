@@ -24,7 +24,7 @@ namespace holaMundo{
 			promedio/=int.Parse("15");
 			Console.WriteLine(promedio);
 			
-			string nombre="jorge";
+			string nombre="john";
 			nombre+="john"+ " doe "+promedio.ToString();			
 			nombre="asdd";			
 
